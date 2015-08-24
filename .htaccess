@@ -7,6 +7,8 @@ SetEnv HTTP_READ_HTACCESS On
 
 	# RewriteEngine is required.
 	# Everything is routed through index.php
+	# RewriteBase /<YOUR_USERNAME>/turkserver/ 
+	# Comment out the line above and replace the <> part with your username if you're not installing turkserver in the root directory of your server.
 	RewriteEngine on
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ index.php
