@@ -31,7 +31,7 @@ $fields = read_data( $experiment_name, $list_number );
 
 <body>
 
-<form name="mturk_form" method="post" id="mturk_form" action="<?php echo APPURL . $experiment_name; ?>">
+<form name="mturk_form" method="post" id="mturk_form" action="<?php echo APPURL .'/'. $experiment_name; ?>">
 <?php
 // For some reason the assignmentId field is lowercase in Turk, but then gets stored
 // into a column called AssignmentId in the results. I suppose we can do that too.
